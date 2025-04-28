@@ -25,6 +25,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#gol">Penalti</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#camisa">Personalize sua camisa</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -136,13 +139,17 @@
     <section class="camisa">
         <div class="camisa__content flex--sb">
             <form action="">
+                <h2>Personalize sua camisa</h2>
+
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-                <input type="button" id="btnNome" value="enviar">
+                <input type="text" name="numero" id="numero" placeholder="Digite um número">
+                <input type="button" id="btn" value="enviar">
             </form>
             
             <div class="camisa__modelo">
                 <img src="./img/camisa.png" alt="">
-                <h3 id="camisa__nome">Testeee</h3>
+                <span id="camisa__nome" class="camisa__text">Seu Nome</span>
+                <span id="camisa__numero" class="camisa__text">Nº</span>
             </div>
         </div>
     </section>

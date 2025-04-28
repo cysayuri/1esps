@@ -7,25 +7,87 @@
     width: 900px;
     margin: 0 auto;
     padding: 50px 0;
+    
+    h2 {
+        color: #006135;
+        margin-bottom: 50px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 43%;
+    }
+    
+    input {
+        border: 1px solid #006135;
+        text-transform: uppercase;
+        outline: none;
+    }
+    
+    input[type="text"] {
+        border-radius: 15px;
+        background: transparent;
+        padding: 12px 30px 10px 20px;
+        font-size: 1.2rem;
+        color: #006135;
+        margin-bottom: 25px;
+        
+        &::placeholder {
+            color: #006135;
+            text-transform: uppercase;
+        }
+    }
+    
+    input[type="button"] {
+        color: #fff;
+        background-color: #006135;
+        border-radius: 20px;
+        padding: 11px 30px 11px;
+        width: fit-content;
+        transition: background .5s ease-in-out;
+        
+        &:hover {
+            background-color: #00311b;
+        }
+    }
 }
 
 .camisa__modelo {
+    width: 45%;
     position: relative;
-
+    
     img {
         width: 100%;
         height: 550px;
         object-fit: contain;
     }
-    
-    h3 {
+
+    span {
         color: #fff;
-        font-size: 2rem;
         text-align: center;
         position: absolute;
-        bottom: 70px;
+        max-width: 180px;
         margin-left: 5px;
-        left: 50%;
-        transform: translateX(-50%);
     }
+}
+
+#camisa__nome {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#camisa__numero {
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-weight: 600;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 210px;
 }
