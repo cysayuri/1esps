@@ -18,3 +18,14 @@ filter.forEach(elem => {
         })
     })
 })
+
+
+
+const nome = document.querySelector('#nome')
+const btn = document.querySelector('#btnNome')
+const nomeCamisa = document.querySelector('#camisa__nome')
+
+btn.addEventListener('click', () => {
+    nomeUser = nome.value
+    nomeCamisa.innerHTML = nomeUser
+})
